@@ -39,6 +39,7 @@ jobs:
       - run: git push
 
       # Publish to GitHub Packages
+      - run: npm login
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM }}
