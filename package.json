@@ -7,7 +7,8 @@
   "license": "UNLICENSED",
   "scripts": {
     "prebuild": "rimraf dist",
-    "build": "nest build",
+    "build": "npx tsc -b -v tsconfig.json",
+    "build:prod": "yarn lint && yarn prebuild && yarn build && yarn pack",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
