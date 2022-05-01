@@ -28,8 +28,8 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config user.email "$MAIL"
-          git config user.name "$ACTOR"
+          git config user.email "${{ secrets.MAIL }}"
+          git config user.name "${{ secrets.ACTOR }}"
 
       - run: yarn install --frozen-lockfile
       - run: yarn version --patch -m "new Release 📣"
