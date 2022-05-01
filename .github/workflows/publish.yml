@@ -22,7 +22,7 @@ jobs:
       # Setup .npmrc file to publish to GitHub Packages
       - uses: actions/setup-node@v3
         with:
-          node-version: 'v14.16.0'
+          node-version: 'v14.17.0'
           registry-url: 'https://npm.pkg.github.com'
           scope: '@lubysoftware'
 
