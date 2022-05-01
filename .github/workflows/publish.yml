@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: 'v14.17.0'
           registry-url: 'https://npm.pkg.github.com'
-          scope: '@lubysoftware'
+          scope: '@sosvari'
 
       - name: Configure Git
         run: |
